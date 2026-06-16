@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { X, Mail, MapPin, GraduationCap, Phone, Download, Printer, Eye, FileText, Globe, ExternalLink, Award } from 'lucide-react';
-
+// @ts-ignore: Allow importing image asset without a dedicated module declaration
+import profileImagePath from '../assets/images/profile.jpg';
+ //@ts-ignore: Allow importing image asset without a dedicated module declaration
+import resumeImagePath from '../assets/images/Wai Yan Htet Resume.jpg';
 interface ResumeModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -9,7 +12,7 @@ interface ResumeModalProps {
 
 export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
   const [activeTab, setActiveTab] = useState<'image' | 'interactive'>('image');
-  const resumeImagePath = '/src/assets/images/Wai Yan Htet Resume.jpg';
+  // const resumeImagePath = '/src/assets/images/Wai Yan Htet Resume.jpg';
 
   if (!isOpen) return null;
 
@@ -152,7 +155,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 <div className="bg-white p-8 sm:p-10 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 border-b border-slate-100">
                   <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-3 border-white shadow-md relative ring-4 ring-slate-100 bg-slate-50 flex-shrink-0">
                     <img
-                      src="/src/assets/images/profile.jpg"
+                      src={profileImagePath}
                       alt="Wai Yan Htet Avatar"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover"

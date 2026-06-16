@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Award, GraduationCap, MapPin, Code2 } from 'lucide-react';
 // @ts-ignore: Allow importing image asset without a dedicated module declaration
 import profileImagePath from '../assets/images/profile.jpg';
+
 export default function About() {
  
 
