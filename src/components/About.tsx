@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Award, GraduationCap, MapPin, Code2 } from 'lucide-react';
 
 export default function About() {
-  const profileImagePath = 'https://photos.app.goo.gl/o8VnYUvYxqraobYX7';
+  const profileImagePath = '/src/assets/images/profile.jpg';
 
   const stats = [
     { icon: GraduationCap, label: 'Education', value: 'B.C.Sc (Software Engineering)', detail: 'UCSY' },
