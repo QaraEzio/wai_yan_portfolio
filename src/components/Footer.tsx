@@ -73,13 +73,13 @@ export default function Footer({ onScrollToTop }: FooterProps) {
         <div className="flex flex-col sm:flex-row justify-between items-center pt-8 text-xs text-slate-500 font-sans gap-4">
           <div className="text-center sm:text-left">
             <span>&copy; {currentYear} Wai Yan Htet. All rights reserved. </span>
-            <span className="hidden sm:inline">|</span>
-            <span className="block sm:inline mt-1 sm:mt-0"> University of Computer Studies, Yangon (UCSY)</span>
+
+           
           </div>
 
           <div className="flex items-center space-x-5" id="footer-socials">
             <a
-              href="https://github.com/waiyanhtet"
+              href="https://github.com/QaraEzio"
               target="_blank"
               rel="noreferrer"
               className="text-slate-500 hover:text-white transition-colors duration-150"
@@ -88,7 +88,7 @@ export default function Footer({ onScrollToTop }: FooterProps) {
               <Github className="w-4 h-4" />
             </a>
             <a
-              href="https://linkedin.com/in/waiyanhtet"
+              href="http://www.linkedin.com/in/wai-yan-htet-571402276"
               target="_blank"
               rel="noreferrer"
               className="text-slate-500 hover:text-blue-400 transition-colors duration-150"

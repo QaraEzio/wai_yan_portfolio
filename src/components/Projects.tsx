@@ -20,58 +20,58 @@ export default function Projects() {
       longDescription: 'Developed an educational web platform to help third-semester students access lecture materials, tutorial videos, and software tools in one centralized location. Built the application using HTML, CSS, Java Servlets, providing an organized and supportive learning environment for students.',
       image: '/src/assets/images/info_ass.png',
       tags: ['HTML', 'CSS', 'MySQL', 'Tomcat','Java Servlet' ],
-      liveUrl: 'https://demo-ecommerce.example.com',
+      liveUrl: 'https://jolly-bienenstitch-9279c8.netlify.app/',
       githubUrl: 'https://github.com/waiyanhtet/ecommerce-react-node',
       featured: true
     },
     {
-      id: 'task-api',
-      title: 'Task Management API',
-      category: 'API',
-      description: 'RESTful API service for enterprise coordination with JWT access authorization, Mongo database schemes, and Websocket event broadcasts.',
+      id: 'greenstack',
+      title: 'GreenStack',
+      category: 'Web App',
+      description: 'Technologies Used: React, Node.js Developed a responsive website to empower Myanmar farmers with digital tools and agricultural resources. Designed an intuitive user interface to promote sustainable farming practices and improve access to information',
       longDescription: 'A production-hardened RESTful microservice tailored to support multiple collaborative users. Features robust role-based access controls, automatic MongoDB index optimization, rapid request parsing, and socket-driven live alerts when collaborative task cards migrate between lifecycle stages.',
-      image: 'https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?auto=format&fit=crop&w=800&q=80',
+      image: '/src/assets/images/greenstack.png',
       tags: ['Node.js', 'Express', 'MongoDB', 'Socket.io', 'JWT Token'],
       liveUrl: 'https://api-tasks.example.com/docs',
       githubUrl: 'https://github.com/waiyanhtet/task-manager-api',
       featured: true
     },
-    {
-      id: 'weather-dash',
-      title: 'Weather Insights Dashboard',
-      category: 'Web App',
-      description: 'Interactive meteorological visualization workspace graphing environmental index ranges and historic precipitation trends.',
-      longDescription: 'Designed around clean data visualization patterns, this application polls the OpenWeather API and feeds complex responses into customizable chart arrays. Uses intensive localStorage caching routines to bypass repetitive query charges and maintain zero-latency render frames.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80',
-      tags: ['React', 'TypeScript', 'Recharts', 'Weather API', 'CSS Grid'],
-      liveUrl: 'https://weather-trends.example.com',
-      githubUrl: 'https://github.com/waiyanhtet/weather-dashboard-project',
-      featured: false
-    },
-    {
-      id: 'ucsy-helper',
-      title: 'UCSY Student Helper Portal',
-      category: 'Tool',
-      description: 'Internal academic assistant utility for university students consolidating course timetables, credit tracking, and source materials files.',
-      longDescription: 'An organic development built to assist fellow University of Computer Studies, Yangon (UCSY) students. Consolidates curriculum schedules, computes weighted GPA scales across semesters, and establishes a secure peer-to-peer catalog of lecture records and coding templates.',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80',
-      tags: ['React', 'UCSY Resources', 'Local Storage', 'Fuzzy Search', 'Vite'],
-      liveUrl: 'https://ucsy-portal.example.com',
-      githubUrl: 'https://github.com/waiyanhtet/ucsy-student-helper',
-      featured: true
-    },
-    {
-      id: 'dev-docs-finder',
-      title: 'DevDocs Search Engine',
-      category: 'Tool',
-      description: 'Instant local offline search compiler scanning documentation manifests with indexed caching vectors.',
-      longDescription: 'An high-speed utility crafted to aid developer workflows. Utilizes deep client-side indexing and Web Workers to process over 50,000 code glossary entries in under 4ms, functioning completely offline without server-side compute relays.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
-      tags: ['TypeScript', 'Web Workers', 'Fuse.js', 'Offline Caching', 'Tailwind'],
-      liveUrl: 'https://fast-docs.example.com',
-      githubUrl: 'https://github.com/waiyanhtet/docs-search-engine',
-      featured: false
-    }
+    // {
+    //   id: 'weather-dash',
+    //   title: 'Weather Insights Dashboard',
+    //   category: 'Web App',
+    //   description: 'Interactive meteorological visualization workspace graphing environmental index ranges and historic precipitation trends.',
+    //   longDescription: 'Designed around clean data visualization patterns, this application polls the OpenWeather API and feeds complex responses into customizable chart arrays. Uses intensive localStorage caching routines to bypass repetitive query charges and maintain zero-latency render frames.',
+    //   image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80',
+    //   tags: ['React', 'TypeScript', 'Recharts', 'Weather API', 'CSS Grid'],
+    //   liveUrl: 'https://weather-trends.example.com',
+    //   githubUrl: 'https://github.com/waiyanhtet/weather-dashboard-project',
+    //   featured: false
+    // },
+    // {
+    //   id: 'ucsy-helper',
+    //   title: 'UCSY Student Helper Portal',
+    //   category: 'Tool',
+    //   description: 'Internal academic assistant utility for university students consolidating course timetables, credit tracking, and source materials files.',
+    //   longDescription: 'An organic development built to assist fellow University of Computer Studies, Yangon (UCSY) students. Consolidates curriculum schedules, computes weighted GPA scales across semesters, and establishes a secure peer-to-peer catalog of lecture records and coding templates.',
+    //   image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80',
+    //   tags: ['React', 'UCSY Resources', 'Local Storage', 'Fuzzy Search', 'Vite'],
+    //   liveUrl: 'https://ucsy-portal.example.com',
+    //   githubUrl: 'https://github.com/waiyanhtet/ucsy-student-helper',
+    //   featured: true
+    // },
+    // {
+    //   id: 'dev-docs-finder',
+    //   title: 'DevDocs Search Engine',
+    //   category: 'Tool',
+    //   description: 'Instant local offline search compiler scanning documentation manifests with indexed caching vectors.',
+    //   longDescription: 'An high-speed utility crafted to aid developer workflows. Utilizes deep client-side indexing and Web Workers to process over 50,000 code glossary entries in under 4ms, functioning completely offline without server-side compute relays.',
+    //   image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+    //   tags: ['TypeScript', 'Web Workers', 'Fuse.js', 'Offline Caching', 'Tailwind'],
+    //   liveUrl: 'https://fast-docs.example.com',
+    //   githubUrl: 'https://github.com/waiyanhtet/docs-search-engine',
+    //   featured: false
+    // }
   ];
 
   // Filtering Logic
