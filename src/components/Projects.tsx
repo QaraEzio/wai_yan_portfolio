@@ -2,6 +2,11 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ExternalLink, Github, Layers, Code, Sparkles, X, Terminal, CheckCircle } from 'lucide-react';
 import { Project } from '../types';
+// @ts-ignore: Allow importing image asset without a dedicated module declaration
+
+import pjimage_1 from '../assets/images/greenstack.png';
+// @ts-ignore: Allow importing image asset without a dedicated module declaration
+import pjimage_2 from '../assets/images/info_ass.png';
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState<'All' | 'Web App' | 'Mobile App' | 'API' | 'Tool'>('All');
@@ -18,7 +23,7 @@ export default function Projects() {
       category: 'Web App',
       description: 'Developed an educational web platform to help third-semester students access lecture materials, tutorial videos, and software tools in one centralized location. Built the application using HTML, CSS, Java Servlets, providing an organized and supportive learning environment for students.',
       longDescription: 'Developed an educational web platform to help third-semester students access lecture materials, tutorial videos, and software tools in one centralized location. Built the application using HTML, CSS, Java Servlets, providing an organized and supportive learning environment for students.',
-      image: '/src/assets/images/info_ass.png',
+      image: pjimage_2,
       tags: ['HTML', 'CSS', 'MySQL', 'Tomcat','Java Servlet' ],
       liveUrl: 'https://jolly-bienenstitch-9279c8.netlify.app/',
       githubUrl: 'https://github.com/waiyanhtet/ecommerce-react-node',
@@ -30,7 +35,7 @@ export default function Projects() {
       category: 'Web App',
       description: 'Technologies Used: React, Node.js Developed a responsive website to empower Myanmar farmers with digital tools and agricultural resources. Designed an intuitive user interface to promote sustainable farming practices and improve access to information',
       longDescription: 'A production-hardened RESTful microservice tailored to support multiple collaborative users. Features robust role-based access controls, automatic MongoDB index optimization, rapid request parsing, and socket-driven live alerts when collaborative task cards migrate between lifecycle stages.',
-      image: '/src/assets/images/greenstack.png',
+      image: pjimage_1,
       tags: ['Node.js', 'Express', 'MongoDB', 'Socket.io', 'JWT Token'],
       liveUrl: 'https://api-tasks.example.com/docs',
       githubUrl: 'https://github.com/waiyanhtet/task-manager-api',
