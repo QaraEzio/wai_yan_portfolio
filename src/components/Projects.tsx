@@ -7,13 +7,15 @@ import { Project } from '../types';
 import pjimage_1 from '../assets/images/greenstack.png';
 // @ts-ignore: Allow importing image asset without a dedicated module declaration
 import pjimage_2 from '../assets/images/info_ass.png';
+// @ts-ignore: Allow importing image asset without a dedicated module declaration
+import pjimage_3 from '../assets/images/expense.png';
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState<'All' | 'Web App' | 'Mobile App' | 'API' | 'Tool'>('All');
   const [activeProjectModal, setActiveProjectModal] = useState<Project | null>(null);
 
-  const categories: ('All' | 'Web App' | 'Mobile App' | 'API' | 'Tool')[] = [
-    'All', 'Web App', 'Mobile App', 'API', 'Tool'
+  const categories: ('All' | 'Web App' | 'Mobile App' )[] = [
+    'All', 'Web App', 'Mobile App', 
   ];
 
   const projects: Project[] = [
@@ -27,32 +29,32 @@ export default function Projects() {
       tags: ['HTML', 'CSS', 'MySQL', 'Tomcat','Java Servlet' ],
       liveUrl: 'https://jolly-bienenstitch-9279c8.netlify.app/',
       githubUrl: 'https://github.com/waiyanhtet/ecommerce-react-node',
-      featured: true
+      featured: false
     },
     {
       id: 'greenstack',
       title: 'GreenStack',
       category: 'Web App',
-      description: 'Technologies Used: React, Node.js Developed a responsive website to empower Myanmar farmers with digital tools and agricultural resources. Designed an intuitive user interface to promote sustainable farming practices and improve access to information',
-      longDescription: 'A production-hardened RESTful microservice tailored to support multiple collaborative users. Features robust role-based access controls, automatic MongoDB index optimization, rapid request parsing, and socket-driven live alerts when collaborative task cards migrate between lifecycle stages.',
+      description: 'Developed a web-based platform that supports Myanmar farmers by providing agricultural information, crop recommendations, and a chatbot for answering farming-related questions. The system helps farmers make informed decisions and improve productivity through accessible digital assistance.',
+      longDescription: 'Developed a web-based platform that supports Myanmar farmers by providing agricultural information, crop recommendations, and a chatbot for answering farming-related questions. The system helps farmers make informed decisions and improve productivity through accessible digital assistance.',
       image: pjimage_1,
-      tags: ['Node.js', 'Express', 'MongoDB', 'Socket.io', 'JWT Token'],
-      liveUrl: 'https://api-tasks.example.com/docs',
-      githubUrl: 'https://github.com/waiyanhtet/task-manager-api',
+      tags: ['React', 'TailwindCss', 'MongoDB', 'Python'],
+      liveUrl: 'https://green-stack-frontend.vercel.app',
+      githubUrl: 'https://github.com/Hsu-Lae-Waddy/GreenStack.git',
       featured: true
     },
-    // {
-    //   id: 'weather-dash',
-    //   title: 'Weather Insights Dashboard',
-    //   category: 'Web App',
-    //   description: 'Interactive meteorological visualization workspace graphing environmental index ranges and historic precipitation trends.',
-    //   longDescription: 'Designed around clean data visualization patterns, this application polls the OpenWeather API and feeds complex responses into customizable chart arrays. Uses intensive localStorage caching routines to bypass repetitive query charges and maintain zero-latency render frames.',
-    //   image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80',
-    //   tags: ['React', 'TypeScript', 'Recharts', 'Weather API', 'CSS Grid'],
-    //   liveUrl: 'https://weather-trends.example.com',
-    //   githubUrl: 'https://github.com/waiyanhtet/weather-dashboard-project',
-    //   featured: false
-    // },
+    {
+      id: 'xpense',
+      title: 'Expense Tracker',
+      category: 'Web App',
+      description: 'Built an Expense Tracker Management System to help users keep track of their daily income and expenses. It allows easy recording, categorizing, and viewing of spending..',
+      longDescription: 'Built an Expense Tracker Management System to help users keep track of their daily income and expenses. It allows easy recording, categorizing, and viewing of spending..',
+      image: pjimage_3,
+      tags: ['React', 'TypeScript', 'Python', 'Django', 'SQL lite'],
+      liveUrl: 'https://weather-trends.example.com',
+      githubUrl: 'https://github.com/QaraEzio/ExpenseTracker_Django.git',
+      featured: false
+    },
     // {
     //   id: 'ucsy-helper',
     //   title: 'UCSY Student Helper Portal',
@@ -281,10 +283,10 @@ export default function Projects() {
 
                   {/* Source Control & Demos */}
                   <div className="pt-4 border-t border-slate-100 flex flex-wrap justify-between items-center gap-4 flex-shrink-0">
-                    <div className="flex items-center space-x-1.5 text-xs text-slate-400 font-mono">
+                    {/* <div className="flex items-center space-x-1.5 text-xs text-slate-400 font-mono">
                       <Code className="w-3.5 h-3.5" />
                       <span>Verified Sandbox Mock Release</span>
-                    </div>
+                    </div> */}
 
                     <div className="flex items-center space-x-3.5">
                       {activeProjectModal.githubUrl && (
