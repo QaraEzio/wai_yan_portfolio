@@ -9,6 +9,7 @@ import pjimage_1 from '../assets/images/greenstack.png';
 import pjimage_2 from '../assets/images/info_ass.png';
 // @ts-ignore: Allow importing image asset without a dedicated module declaration
 import pjimage_3 from '../assets/images/expense.png';
+import pjimage_4 from '../assets/images/benkyobox.png';
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState<'All' | 'Web App' | 'Mobile App' | 'API' | 'Tool'>('All');
@@ -53,6 +54,18 @@ export default function Projects() {
       tags: ['React', 'TypeScript', 'Python', 'Django', 'SQL lite'],
       liveUrl: 'https://weather-trends.example.com',
       githubUrl: 'https://github.com/QaraEzio/ExpenseTracker_Django.git',
+      featured: false
+    },
+      {
+      id: 'BenkyouBox',
+      title: 'Japanese Learning App',
+      category: 'Mobile App',
+      description: 'Developed an educational web platform to help third-semester students access lecture materials, tutorial videos, and software tools in one centralized location. Built the application using HTML, CSS, Java Servlets, providing an organized and supportive learning environment for students.',
+      longDescription: 'Developed an educational web platform to help third-semester students access lecture materials, tutorial videos, and software tools in one centralized location. Built the application using HTML, CSS, Java Servlets, providing an organized and supportive learning environment for students.',
+      image: pjimage_4,
+      tags: ['HTML', 'CSS', 'MySQL', 'Tomcat','Java Servlet' ],
+      liveUrl: 'https://jolly-bienenstitch-9279c8.netlify.app/',
+      githubUrl: 'https://github.com/waiyanhtet/ecommerce-react-node',
       featured: false
     },
     // {

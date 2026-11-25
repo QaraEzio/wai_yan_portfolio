@@ -9,6 +9,7 @@ export default function Skills() {
       iconName: 'layout',
       skills: [
         { name: 'React', level: 88 },
+        {name: 'React Native', level: 80},
          { name: 'Flutter', level: 95 },
         { name: 'TypeScript', level: 90 },
         { name: 'Next.js', level: 85 },
